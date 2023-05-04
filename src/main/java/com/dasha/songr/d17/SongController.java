@@ -30,7 +30,7 @@ public class SongController {
         ArrayList<Album> album = new ArrayList<>();
                 Album album1 = new Album ("Anti (Deluxe)", "Rihanna", 16, 3058,"img/Anti.png" );
         Album album2 = new Album("Ready(Deluxe Version)", "Trey Songz", 20, 3490, "img/Ready.png" );
-        Album album3 = new Album("Ctrl", "Sza", 14, 2946, "img/Ctrl");
+        Album album3 = new Album("Ctrl", "Sza", 14, 2946, "img/Ctrl.png");
         album.add(album1);
         album.add(album2);
         album.add(album3);
