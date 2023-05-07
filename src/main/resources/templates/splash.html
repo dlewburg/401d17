@@ -29,5 +29,24 @@
         </fieldset>
     </form>
 
+    <h2>ADD SONGS TO ALBUM</h2>
+    <form action="/song/add/" method="POST">
+        <fieldset>
+            <legend>Add Track from Album</legend>
+            <label>Song Title</label>
+            <input type="text" name="title">
+            <label>Track Number</label>
+            <input type="number" name="trackNumber">
+            <label>Song Length (in seconds)</label>
+            <input type="number" name="songLength">
+            <label>Album Title</label>
+            <input type="text" name="albumTitle">
+<!--            <label>Album Cover Image URL</label>-->
+<!--            <input type="text" name="imgUrl">-->
+            <input type="hidden" name="album" th:value="${album}">
+            <input type="submit" value="Add Track to Album">
+        </fieldset>
+    </form>
+
 </body>
 </html>
