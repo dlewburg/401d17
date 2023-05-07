@@ -1,4 +1,5 @@
-package com.dasha.songr.d17;
+package com.dasha.songr.d17.controllers;
+import com.dasha.songr.d17.models.Album;
 import org.springframework.ui.Model;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,16 @@
-package com.dasha.songr.d17;
+package com.dasha.songr.d17.models;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 
 public class Album {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    long id;
     private String title;
     private String artist;
     private int songCount;

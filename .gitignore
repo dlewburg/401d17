@@ -250,3 +250,6 @@ Temporary Items
 
 # Ignore .idea folder
 .idea
+
+# Ignore Application Properties
+/src/main/resources/application.properties
