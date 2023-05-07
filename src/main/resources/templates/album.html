@@ -33,6 +33,12 @@
         </tr>
         </tbody>
     </table>
+    <section>
+        <h2>Album Song List</h2>
+        <ul th:each="song : ${album.song}">
+            <li th:text="'Album Title: ' + ${album.albumTitle}"></li>
+        </ul>
+    </section>
 </main>
 </body>
 </html>

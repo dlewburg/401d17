@@ -1,9 +1,8 @@
 package com.dasha.songr.d17.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 
@@ -17,6 +16,8 @@ public class Album {
     int songLength;
     String imgUrl;
 
+    @OneToMany(mappedBy="album", cascade=CascadeType.ALL)
+    List<Song> songList;
     protected Album() {}
 
     public Album(String title, String artist, int songCount, int songLength, String imgUrl) {
@@ -65,6 +66,14 @@ public class Album {
 
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
+    }
+
+    public List<Song> getSongList() {
+        return songList;
+    }
+
+    public void setSongList(List<Song> songList) {
+        this.songList = songList;
     }
 
     @Override
