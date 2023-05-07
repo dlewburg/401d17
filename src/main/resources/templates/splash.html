@@ -5,11 +5,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/styles.css}" />
+    <link rel="stylesheet" href="/css/styles.css}" />
     <title>Songr</title>
 </head>
 <body>
-<h1> The Songr App </h1>
-<p> Where the best music lives </p>
+    <h1> The Songr App </h1>
+    <p> Where the best music lives </p>
+    <h2>ADD YOUR OWN ALBUM</h2>
+    <form action="/album-store/" method="POST">
+        <fieldset>
+            <legend>Add Album</legend>
+            <label>Album Title</label>
+            <input type="text" name="title">
+            <label>Album Artist</label>
+            <input type="text" name="artist">
+            <label>Song Count</label>
+            <input type="number" name="songCount">
+            <label>Album Length (in seconds)</label>
+            <input type="number" name="songLength">
+            <label>Album Cover Image URL</label>
+            <input type="text" name="imgUrl">
+            <input type="submit" value="Add Album">
+        </fieldset>
+    </form>
+
 </body>
 </html>
